@@ -1,0 +1,31 @@
+.box {
+    border: solid black 1px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "filter"
+    "galery"
+    "footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+}
+
+.filter {
+    grid-area: filter;
+}
+
+.galery {
+    grid-area: galery;
+}
+
+.footer {
+    grid-area: footer;
+}
