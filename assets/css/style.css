@@ -1,5 +1,8 @@
 .box {
     border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gridcontainer {
@@ -20,12 +23,31 @@
 
 .filter {
     grid-area: filter;
+    display: flex;
+    flex-direction: column;
+}
+
+.filteritem {
+    display: flex;
 }
 
 .galery {
     grid-area: galery;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
 }
 
 .footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
 }
