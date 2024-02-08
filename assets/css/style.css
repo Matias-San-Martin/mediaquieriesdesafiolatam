@@ -57,33 +57,85 @@
     grid-area: filter;
     display: flex;
     flex-direction: column;
+    background-color: rgba(5, 28, 199, 0.137);
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 .filteritem {
     display: flex;
+    width: 85%;
+}
+
+.item2 {
+    border: solid 1px rgba(128, 128, 128, 0.425);
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .galery {
+    flex-direction: column;
+}
+
+.gridgalery {
     grid-area: galery;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .card {
+    /* background-color: aliceblue; */
     display: flex;
     flex-direction: column;
+    border: solid 1px rgba(226, 226, 226, 0.425);
+    margin: 15px;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    min-height: 300px;
 }
 
 .card img {
     width: 250px;
 }
 
+.card button {
+    border: solid 1px rgba(11, 48, 212, 0.712);
+    border-radius: 5px;
+    background-color: rgba(11, 48, 212, 0.712);
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
 .navigation {
     display: flex;
+    margin: 15px;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+.navigation button {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    color: rgba(156, 169, 226, 0.603);
+    border: none;
 }
 
 .footer {
     grid-area: footer;
     display: flex;
     flex-direction: column;
+    background-color: rgb(0, 0, 145);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 5px;
+}
+
+.footericons {
+    gap: 10px;
 }
