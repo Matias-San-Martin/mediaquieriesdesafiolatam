@@ -3,8 +3,9 @@
     padding: 0;
 }
 
+
 .box {
-    border: solid black 1px;
+    /* border: solid black 1px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +31,7 @@
 }
 
 .title {
-    width: 165px;
+    /* width: 165px; */
     margin-left: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -47,7 +48,7 @@
 }
 
 .header button i {
-    /* border: solid 1px rgba(11, 48, 212, 0.712); */
+    border: solid 1px rgba(11, 48, 212, 0.712);
     color: white;
     background-color: rgba(11, 48, 212, 0.712);
     padding-right: 15px;
@@ -88,19 +89,19 @@
 }
 
 .card {
-    /* background-color: aliceblue; */
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     border: solid 1px rgba(226, 226, 226, 0.425);
     margin: 15px;
     gap: 10px;
     padding-top: 15px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
     min-height: 300px;
 }
 
 .card img {
-    width: 250px;
+    width: 100%;
 }
 
 .card button {
