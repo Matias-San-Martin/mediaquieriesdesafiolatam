@@ -54,11 +54,16 @@
     padding-right: 15px;
 }
 
+.header .categories a {
+    text-decoration: none;
+    color: white;
+}
+
 .filter {
     grid-area: filter;
     display: flex;
     flex-direction: column;
-    background-color: rgba(5, 28, 199, 0.137);
+    background-color: #F1E4C3;
     gap: 5px;
     padding-top: 10px;
     padding-bottom: 8px;
@@ -123,7 +128,7 @@
 }
 
 .card {
-    background-color: aliceblue;
+    background-color: white;
     display: flex;
     flex-direction: column;
     border: solid 1px rgba(226, 226, 226, 0.425);
@@ -132,10 +137,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
     min-height: 300px;
+    /* -webkit-filter: grayscale(100%); */
+    filter: grayscale(100%);
+    transition: filter .1s ease-in-out ;
+    transition: transform .1s ease-in-out;
+}
+
+.card:hover {
+    filter: grayscale(0%);
+    transform: translateY(-100px) ;  
 }
 
 .card img {
-    width: 100%;
+    width: 100%; 
 }
 
 .card button {
@@ -157,8 +171,16 @@
     padding-left: 5px;
     padding-right: 5px;
     background-color: white;
-    color: rgba(156, 169, 226, 0.603);
+    color: #597E52;
     border: none;
+    filter: grayscale(100%);
+    transition: filter .1s ease-in-out ;
+    transition: transform .1s ease-in-out;
+}
+
+.navigation button:hover {
+    filter: grayscale(0%);
+    transform: scale(2.5) ;
 }
 
 .contac {
@@ -222,9 +244,21 @@ form input {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
-    gap: 5px;
+    gap: 15px;
 }
 
 .footericons {
     gap: 10px;
+}
+
+.footercontac {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+} 
+
+.footericons i {
+    color: white;
+    /* text-decoration: none; */
 }
